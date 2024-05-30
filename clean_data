@@ -1,10 +1,16 @@
-####________________Clean_________________
+####________________clean_data_____________
 ##Léo Le Gall
 ##14/02/2024
 ##dataset by IGFS
 ####_______________________________________
-setwd("C:/Users/leo2l/OneDrive/Bureau/Thesis/code/exercice1/IGFS")
+## this code is made for data from: https://shiny.marine.ie/igfs/
+##other type of data could be clean but the order of the colomn in the dataset should be:
+##"sample_Type_ID", "length", "obs.sex", "weight", "maturity", "age", "cruise_Name", 
+##"station_Number", "species_Code", "year", "DateTime_Shot", "Tow_Duration",
+##"Longitude", "Latitude", "GearCode", "GearDescription", "ICESCODE", "cohort", "LoadDate"
 
+##adress of the files
+setwd("")
 # Vector of species
 spec <- c("MAC", "HER", "WHB", "HAD")
 
