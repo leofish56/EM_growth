@@ -1,0 +1,20 @@
+####____________ks.test_unclassified_____________
+##Léo Le Gall
+##20/05/2024
+##dataset by IGFS
+####_______________________________________
+###Kolmogorov-Smirnov test to compare classified to unclassified distribution at age 0
+setwd("C:/Users/leo2l/OneDrive/Bureau/Thesis/code/exercice1/IGFS")
+spec <- c("HER","HAD","WHB","MAC")
+list.ks<-list()
+list.sex<-list()
+for (i in 1:4){
+data <- read.csv(paste(spec[i],".csv", sep = ""))
+subset_age <- data[data$age == 0, ]
+subset_data1 <- subset_age[subset_age$obs.sex != "unclassified",]
+subset_data2 <- subset_age[subset_age$obs.sex == "unclassified",]
+subset_data3 <- subset_age[subset_age$obs.sex == "female",]
+subset_data4 <- subset_age[subset_age$obs.sex == "male",]
+list.ks[[i]] <- ks.test(subset_data1$length, subset_data2$length)
+list.sex[[i]] <- ks.test(subset_data3$length, subset_data4$length)
+}
