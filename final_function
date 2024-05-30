@@ -5,10 +5,8 @@
 ####_______________________________________
 ###ref Master Thesis Léo Le Gall
 setwd("C:/Users/leo2l/OneDrive/Bureau/Thesis/code/exercice1/IGFS")
-EM_spec<-function(specie,mixprop){
+EM_spec<-function(data,mixprop){
   library(nlstools)
-  y <- specie
-  data <- read.csv(paste(y,".csv", sep = ""))
   Female <- subset(data, obs.sex == "female")
   Male <- subset(data, obs.sex == "male")
   Unclass <- subset(data, obs.sex == "unclassified")
@@ -187,3 +185,9 @@ EM_spec<-function(specie,mixprop){
   ret$obs.logLik<-odnll_EM(par1)
   return(ret)
 }
+
+###how to run the function
+###example for data collected at: https://shiny.marine.ie/igfs/
+###the data need first to be cleaned (see file "clean_data")
+data<-read.csv("HER.csv")
+EM_HER3<-EM_spec(data, 3)
