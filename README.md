@@ -14,11 +14,11 @@ The function has been created for a specific type of dataset. These datasets are
 ## Code Execution Order
 To ensure optimal code performance, follow these steps in order:
 1. Clean your data using `clean_data.R`.
-2. Execute the function in `final_function.R`
+2. Execute the function in `final_function.R`.
 To plot your results :
 1. Clean your data using `clean_data.R`.  
-2. Execute the function in `plot_function.R`
-3. Plot your results in `plots.R`
+2. Execute the function in `plot_function.R`.
+3. Plot your results in `plots.R`.
 
 ## Files
 - `clean_data.R`: Script to clean your dataset.
