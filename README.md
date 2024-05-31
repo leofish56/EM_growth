@@ -1,7 +1,7 @@
 # Implications of Omitting Unclassified Individuals from Sex-Specific Growth Models by Léo Le Gall
 
 ## Project Overview
-This project contains the R code used for a master thesis by Léo le Gall supervised by Dr. Coilin Minto on the implications of omitting unclassified individuals from sex-specific growth models. The methodology follows the article by Minto et al. (2018) (DOI:10.1139/cjfas-2016-0450).
+This project contains the R code used for a master thesis by Léo le Gall supervised by Dr. Coilin Minto on the implications of omitting unclassified individuals from sex-specific growth models. The codes follows the methodology from the article Minto et al. (2018).
 
 ## Abstract
 To fit sex-specific growth models, the sex of the fish must apparently be known for each observation. However, in some species, the sex of juveniles cannot be visually identified, generating a bias in the growth fit at early ages. In this study, a latent variable model is tested on several species to estimate sex-specific von Bertalanffy growth models using an EM algorithm to include individuals with unclassified sex observations.
