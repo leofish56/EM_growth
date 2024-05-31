@@ -29,7 +29,7 @@ To ensure optimal code performance, follow these steps in order:
 - `plot_function.R`: Script to run the fucntion adapted to the plot I added in my thesis.
 - `plots.R`: Script to plot the results.
 
-## References
+## Reference
 - Minto et al., (2018); DOI: [10.1139/cjfas-2016-0450](https://doi.org/10.1139/cjfas-2016-0450)
 
 ## Contact
