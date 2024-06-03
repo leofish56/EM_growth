@@ -10,7 +10,7 @@ EM_spec<-function(data,mixprop){
   Female <- subset(data, obs.sex == "female")
   Male <- subset(data, obs.sex == "male")
   Unclass <- subset(data, obs.sex == "unclassified")
-  #mixing proportion for the starting parameters (14)
+  #mixing proportion for the starting parameters (16)
   mixp_start<-length(Female$length)/(length(Female$length)+(length(Male$length)))
   ## Define growth function (7)
   growth <- function(k, linf, t0, age) {
